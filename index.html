@@ -975,8 +975,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     //https://script.google.com/a/macros/raccoon.ag/s/AKfycbzeYzAAMhfoaRoDZoZF4MRgBYYAvs-r3RH59ViRJ0oLoUk2yxSdndtIUQwNtR7szZnB/exec
 
     window["tracker"].send("pageview", {});
+   </script>
+    
+   <script id="script_tag_scroll">
+      document.addEventListener("scroll", function() {
+          tracker.send('event', {
+              'category':'user-interaction',
+              'action':'scroll',
+              'label':'mouse'
+          })
+      })
     </script>
-  
+    
+    <script id="script_tag_">
+    </script>
+      
+
   
   <img src="https://tag-trainer.raccoon.ag/static/shared/balloon.svg" id="call-me-baby" />
   <!-- Navigation -->
